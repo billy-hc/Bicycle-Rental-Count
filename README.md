@@ -9,8 +9,8 @@ pip install -r requirements.txt
 
 ## Setup Environment - Shell/Terminal
 ```
-mkdir data_analisis_dicoding
-cd data_analisis_dicoding
+mkdir bicycle_rental_count
+cd bicycle_rental_count
 pipenv install
 pipenv shell
 pip install -r requirements.txt
@@ -18,5 +18,5 @@ pip install -r requirements.txt
 
 ## Run steamlit app
 ```
-streamlit run dashboard/dashboard.py
+streamlit run dashboard.py
 ```
