@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 # LOAD DATA
 @st.cache_resource
 def load_data():
-    data = pd.read_csv("dashboard\hour.csv")
+    data = pd.read_csv("data\hour.csv")
     return data
 
 
@@ -37,8 +37,8 @@ if st.sidebar.checkbox("Show Summary Statistics"):
 st.sidebar.markdown("[Download Dataset](https://drive.google.com/drive/folders/1Uk2CDwEwimKPy395dDDqfA8rUc1WCTvI?usp=sharing)")
 
 # VISUALIZATION
-df_bsd_day = pd.read_csv("dashboard\day.csv")
-df_bsd_hour = pd.read_csv("dashboard\hour.csv")
+df_bsd_day = pd.read_csv("data\day.csv")
+df_bsd_hour = pd.read_csv("data\hour.csv")
 # df_bsd_day
 df_bsd_day["dteday"] = pd.to_datetime(df_bsd_day["dteday"])
 # df_bsd_hour
